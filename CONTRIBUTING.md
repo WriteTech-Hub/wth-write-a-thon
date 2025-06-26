@@ -1,75 +1,46 @@
-# Contributing to the Write-A-Thon Writing Challenge
+# 🤝 Contributing to the WriteTech Hub Write-A-Thon Challenge Series
 
-Thank you for your interest in contributing to the **WTH Write-A-Thon Writing Challenge** organized by [WriteTech Hub](https://writetechhub.org/) and [Chimoney](https://chimoney.io/) and supported by [DevRel Community Africa!](https://devrelcomafrica.xyz/)
+Thank you for your interest in contributing to the Write-a-Ton Challenge, an initiative by WriteTech Hub (WTH) to help technical writers build real-world skills and portfolios.
 
-We’re excited to have you here. To keep everything organized and helpful to the community, please follow these contribution guidelines.
+## 📌 Who Can Contribute?
 
-## 📌 Challenge Overview
+You can contribute to this repository by:
 
-This repository is for submitting your technical writing deliverables for the Chimoney API challenge. 
+- Participating in active editions of the challenge
+- Helping review submissions
+- Suggesting improvements to future challenges
+- Helping organize or support an upcoming edition
+- Proposing a partnership or API/product for a new edition
 
-Each participant is expected to submit:
+To participate in any edition, you must be a member of the WriteTech Hub community:  
+👉 [https://writetechhub.org/community](https://writetechhub.org/community)
 
-- One **Use Case Article**
-- One **Tutorial Guide**
-- One **Setup Guide**
+## ✍️ How to Participate in an Edition
 
-All content must be original and created based on one selected Chimoney API endpoint.
+Each edition of the Write-A-Thon Challenge has its own folder under `editions/`.  
+Inside each folder, you’ll find:
 
-## ✍️ How to Contribute
+- A dedicated `README.md` for that edition
+- Contribution guidelines
+- Submission instructions and folder structure
 
-### 1. Fork the Repository
+**Start here:**  
+👉 [Edition 01 – Chimoney](editions/01-chimoney/README.md)
 
-Click the **Fork** button at the top-right corner of this repo and clone it to your local machine:
+## 💡 Want to Propose a New Edition?
 
-```bash
+We welcome collaboration with:
 
-git clone https://github.com/YOUR_USERNAME/write-a-ton-submission.git
-```
+- Tech companies
+- DevRel & community teams
+- Developer tool builders
+- Open source communities
 
-### 2. Create a New Branch
-Use your full name or a username to create a new branch for your submission:
+If you'd like to co-create a Write-A-Thon edition, email us at:  
+📧 **socials@writetechhub.org**
 
-```bash
-git checkout -b your-name-submission
-```
+## 🧑‍⚖️ Code of Conduct
 
-### 3. Add Your Deliverables
-Inside the repository, create a folder using the name you registered with.
+All contributors are expected to follow our [Code of Conduct](CODE_OF_CONDUCT.md) to ensure a welcoming environment for everyone.
 
-```
-/your-name/
-  ├── use-case.md
-  ├── tutorial.md
-  └── setup-guide.md
-```
-Each file should follow markdown formatting (.md) and be clear, concise, and well-structured.
-
-### 4. Commit and Push
-
-```
-git add .
-git commit -m "Add submission by Your Name"
-git push origin your-name-submission
-```
-
-### 5. Create a Pull Request
-- Go to the original repository and click “Compare & Pull Request”.
-- Include a summary of your pull request.
-
-## Writing Guidelines
-- Use simple, beginner-friendly language.
-- Include code snippets and example requests where needed.
-- Check for grammar and clarity.
-- Use proper markdown headers, lists, and code formatting.
-
-## Submission Deadline
-All contributions must be submitted by **July 18th, 2025**.
-
-## After Submission
-- Join the [WriteTechHub Slack community](https://writetechhub.org/our-community/) for updates and announcements.
-
-## Need Help?
-Reach out in the Slack community
-
-*Happy writing, and good luck!*
+Let’s build better docs together.

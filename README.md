@@ -1,58 +1,52 @@
-# WTH-Write-A-Thon
-The **WTH Write-A-Thon Writing Challenge**, presented by [WriteTech Hub](https://writetechhub.org/) and [Chimoney](https://chimoney.io/), and supported by [DevRel Community Africa](https://devrelcomafrica.xyz/), offers aspiring and experienced tech writers the opportunity to gain real-world experience by creating high-quality documentation and content using the [Chimoney API](https://chimoney.readme.io/reference/introduction).
+# ✍️ WriteTech Hub Write-A-Thon Challenge
 
-## How to Participate
+Welcome to the official Write-A-Thon Challenge series by WriteTech Hub (WTH)!
 
-### Step 1: Indicate Interest in the Challenge
+WTH Write-A-Thon is a technical writing challenge designed to help writers grow through real-world content creation, collaboration with industry partners, and feedback-driven learning. Each edition is run in partnership with a tech organization and focuses on a specific writing format or theme.
 
-- Register here: [https://lu.ma/5nb4g52q](https://lu.ma/5nb4g52q)  
-- After registering, you’ll receive an email with the link to join the WriteTech Hub community.
+Our mission is to help technical writers level up, build strong portfolios, and contribute to developer ecosystems through hands-on challenges.
 
-### Step 2: Choose Your API Endpoint
+## 🧩 How It Works
 
-Select **one** of the following Chimoney API endpoints to focus on:
+- Each edition focuses on a specific content type (e.g., tutorials, guides, articles)
+- Participants are given prompts, tools, or APIs to write about
+- Submissions are reviewed and scored by expert reviewers
+- Top contributors receive recognition and rewards
 
-- [Create Interledger wallet address](https://api.chimoney.io/v0.2.4/api-docs/#/Interledger/post_v0_2_4_accounts_issue_wallet_address)  
-- [Multi-currency wallet transfer](https://api.chimoney.io/v0.2.4/api-docs/#/Interledger/post_v0_2_4_multicurrency_wallets_transfer)  
-- [Payout to Interledger wallet address](https://api.chimoney.io/v0.2.4/api-docs/#/Interledger/post_v0_2_4_payouts_interledger_wallet_address)  
+## 🎯 Who It’s For
 
-### Step 3: Create Three Technical Deliverables
+- Aspiring and intermediate technical writers
+- Developers transitioning into documentation
+- Writers looking to build their public portfolio
+- Community contributors in open source or DevRel
 
-#### 1. Use Case Article
-- Explain a real-world scenario where your chosen endpoint would be valuable  
-- Focus on relatable use cases (e.g., remittances, gig worker payouts)  
-- Demonstrate practical applications and benefits  
+## 📚 Editions
 
-#### 2. Tutorial Guide
-- Provide step-by-step instructions demonstrating how to use the endpoint in code  
-- Include clear examples and detailed explanations  
-- Make it beginner-friendly yet comprehensive  
+### ✅ [Edition 1 – Chimoney](editions/01-chimoney/README.md)
+- Theme: Real-world API Content
+- Focus: Use Case Article, Tutorial Guide, Setup Guide
+- Partner: Chimoney
+- Status: **Live**
 
-#### 3. Setup Guide
-- Walk readers through authentication and environment setup  
-- Ensure readers can successfully call the endpoint by the end  
-- Cover all prerequisites and configuration steps  
+> Visit the [Chimoney Edition folder](editions/01-chimoney/) to participate, explore the guidelines, or view submissions.
 
-### Step 4: Upload Your Work on GitHub
+## 🤝 Want to Partner With Us?
 
-- Push all three deliverables to this GitHub repository in the `submissions` folder.
+We welcome partnerships with organizations interested in empowering the next generation of technical writers. If you're building an API, platform, or tool — let's work together.
 
-### Step 5: Submit Your Documentation
+📧 Contact: socials@writetechhub.org  
+🌐 Website: [https://writetechhub.org](https://writetechhub.org)
 
-- Submit your entry using the [challenge submission form](https://forms.gle/SRYd5CDprZpPyzkn7).
-  
-The deadline for all submissions is **July 18th, 2025**
+## 📄 Repository Structure
 
-### Step 6: Stay Tuned
+```
+wth-write-a-thon/
+├── README.md # About the Write-A-Thon series
+├── editions/ # All challenge editions live here
+│   └── 01-chimoney/ # First edition with Chimoney
+```
 
-- Once your submission is in, sit back and wait!  
-- All updates, reviews, and winner announcements will be shared via the **Slack** community.
+## 🙌 Join the Community
 
-## Essential Resources
-
-- [Chimoney API Documentation](https://chimoney.readme.io/reference/introduction)  
-- [WriteTechHub Community](https://writetechhub.org/our-community/)  
-- [Submission Form](https://forms.gle/SRYd5CDprZpPyzkn7) 
-
-*Ready to showcase your technical writing skills and contribute to Africa's growing tech ecosystem?* 
-*Join us in the **Docs for Devs Writing Challenge!***
+To participate in any edition, you must be a member of the WriteTech Hub community:  
+👉 [https://writetechhub.org/community](https://writetechhub.org/community)
