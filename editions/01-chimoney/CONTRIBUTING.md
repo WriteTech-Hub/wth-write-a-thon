@@ -90,6 +90,6 @@ A reviewer will:
 
 For questions, support, and to connect with other participants, join the Chimoney community on Discord: [https://discord.com/invite/TsyKnzT4qV](https://discord.com/invite/TsyKnzT4qV) and ask questions in the `#wth-x-chimoney` channel.
 
-We also recommend joining the [WriteTech Hub community](https://writetechhub.org/community) for additional writing resources and peer support beyond this challenge.
+We also recommend joining the [WriteTech Hub community](https://writetechhub.org/our-community/) for additional writing resources and peer support beyond this challenge.
 
 We’re here to support you!
