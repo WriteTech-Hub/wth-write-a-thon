@@ -13,7 +13,7 @@ You can contribute to this repository by:
 - Proposing a partnership or API/product for a new edition
 
 To participate in any edition, you must be a member of the WriteTech Hub community:  
-👉 [https://writetechhub.org/community](https://writetechhub.org/community)
+👉 [https://writetechhub.org/our-community/](https://writetechhub.org/our-community/)
 
 ## How to participate in an edition
 
