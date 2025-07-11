@@ -49,4 +49,4 @@ wth-write-a-thon/
 ## Join the community
 
 To participate in any edition, you must be a member of the WriteTech Hub community:  
-👉 [https://writetechhub.org/community](https://writetechhub.org/community)
+👉 [https://writetechhub.org/our-community/](https://writetechhub.org/our-community/)
