@@ -13,7 +13,7 @@ Once you join the Discord community, you’ll get access to:
 - Helpful resources
 - Technical support during the challenge
 
-We recommend also joining the [WriteTech Hub community](https://writetechhub.org/community). Being part of WriteTech Hub connects you with other technical writers, peer reviewers, and additional writing resources to help you excel in the challenge.
+We recommend also joining the [WriteTech Hub community](https://writetechhub.org/our-community/). Being part of WriteTech Hub connects you with other technical writers, peer reviewers, and additional writing resources to help you excel in the challenge.
 
 ## What you’ll be submitting
 
