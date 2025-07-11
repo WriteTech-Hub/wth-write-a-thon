@@ -8,7 +8,7 @@ This challenge empowers aspiring and experienced tech writers to build real-worl
 
 | Date       | Milestone                                             |
 |------------|-------------------------------------------------------|
-| July 10    | Challenge Kickoff call (with Chimoney + WTH)          |
+| July 16    | Challenge Kickoff call (with Chimoney + WTH)          |
 | July 22    | Mid-challenge AMA session                             |
 | July 31    | Submission deadline                                   |
 | August 7   | Winners announced                                     |
@@ -71,7 +71,7 @@ submissions/
 
 ## Submission steps
 
-### Step 4: Upload your work on GitHub
+### Step 4: Submit your work on GitHub
 1. Fork this repository
 1. Create a new branch:  
   Format: `[endpoint]-[your-slackhandle]`  
@@ -80,8 +80,6 @@ submissions/
 1. Open a Pull Request to the `main` branch
 1. Fill out the Pull Request template and tag the following reviewers: @Phyleria, @adebayoileri
 
-### Step 5: Submit the final form
-- Submit all three deliverables via this [submission form](#).
 
 ### Step 6: Stay tuned
 - All updates, reviews, and winner announcements will be shared via the community forums.
