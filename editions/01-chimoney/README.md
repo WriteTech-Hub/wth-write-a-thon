@@ -22,7 +22,7 @@ This challenge empowers aspiring and experienced tech writers to build real-worl
 ## How to participate
 
 ### Step 1: Register and join the community
-- Register [here](https://oruly.ai/challenge/write-a-thon_challenge) to participate in the challenge.
+- Register [here](https://forms.gle/Vj8odx68qqTNJfxA8) to participate in the challenge.
 - (Required) Join the Chimoney Community: [https://discord.gg/TsyKnzT4qV](https://discord.gg/TsyKnzT4qV) to get updates and support.
 - Join the WriteTech Hub community: [https://writetechhub.org/our-community/](https://writetechhub.org/our-community/)
 
