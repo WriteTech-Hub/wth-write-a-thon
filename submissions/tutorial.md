@@ -72,5 +72,3 @@ Replace `USER_ID` with the ID of the user for whom you want to create the wallet
 - If you continue to experience issues, consult the Chimoney API documentation or reach out to their support team for assistance.
 
 ## Conclusion
-
-In this tutorial, you learned how to use Chimoney’s create interledger wallet address endpoint to generate a new Interledger wallet address for a user. You also learned how to authenticate your API requests and handle common errors. With this knowledge, you can now integrate Chimoney’s Interledger capabilities into your applications.
