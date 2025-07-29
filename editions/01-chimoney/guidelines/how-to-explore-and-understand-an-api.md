@@ -35,12 +35,13 @@ Use tools like:
 - Terminal with `curl`
 
 ### When testing:
-| Step | What to Check |
-|------|---------------|
-| Authentication | Do you need to pass a token or key? |
-| Parameters | Are they required or optional? What formats work? |
-| Responses | What does a success response look like? What about errors? |
-| Edge Cases | What happens if you pass a wrong or missing parameter? |
+
+| Step           | What to Check                                              |
+| -------------- | ---------------------------------------------------------- |
+| Authentication | Do you need to pass a token or key?                        |
+| Parameters     | Are they required or optional? What formats work?          |
+| Responses      | What does a success response look like? What about errors? |
+| Edge Cases     | What happens if you pass a wrong or missing parameter?     |
 
 **Tip:** Save your test results. You’ll reuse these in your tutorial or setup guide.
 
@@ -68,9 +69,9 @@ Once you're familiar with the API:
 
 ## Quick checklist
 
-- [ ] I understand what this API endpoint does and who needs it
-- [ ] I have reviewed its required inputs and outputs
-- [ ] I’ve successfully tested the endpoint using sample data
-- [ ] I’ve documented the authentication, setup, and error behavior
+- [x] I understand what this API endpoint does and who needs it
+- [x] I have reviewed its required inputs and outputs
+- [x] I’ve successfully tested the endpoint using sample data
+- [x] I’ve documented the authentication, setup, and error behavior
 
 If you can check all the above, you're ready to start writing!
