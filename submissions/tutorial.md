@@ -9,7 +9,6 @@ This guide will walk you through the process step-by-step, from setting up your 
 
 1. [Overview](#overview)
 2. [Setup Guide](#setup-guide)
-3. [Conclusion](#conclusion)
 
 ## Overview
 Chimoney’s Interledger Wallet Address is a digital account associated with a user that enables seamless, secure, and instant cross-border transactions using the Interledger Protocol (ILP). This wallet address acts like a virtual bank account on the blockchain or digital asset network, allowing users to send and receive international payments efficiently.
@@ -38,37 +37,45 @@ This section will guide you through the setup process to create an Interledger w
 
 
 ### Step 2: Make Your First API Call
-#### 1. Set Up Authentication in Postman
+
+![Chimoney API Testing Setup](./Create-Interledger-wallet-address-Motunrayo/assets/postman-setup.gif)
+
+_Remember to create a workspace to test your API calls in [Postman](https://postman.co/workspace/create)_
+
+
+
+### 1. Set Up Authentication in Postman
 1. Open Postman and create a new request.
 2. In the request settings, go to the "Authorization" tab.
 3. Select "Bearer Token" as the type and enter your API key in the token field.
 
-#### 2. Configure Request Body
+### 2. Configure Request Body
 1. Set the request method to POST.
-2. Enter the following URL: `https://api.chimoney.io/v1/interledger/wallets`
+2. Enter the following URL: `https://api-v2-sandbox.chimoney.io/v0.2.4/accounts/issue-wallet-address`
 3. In the "Body" tab, select "raw" and choose "JSON" as the format.
 4. Enter the following JSON payload:
 ```json
 {
-  "user_id": "USER_ID"
+  "userID": "user123",
+  "ilpUsername": "chimoney_user123"
 }
 ```
-Replace `USER_ID` with the ID of the user for whom you want to create the wallet address.
+Replace `userID` with the TeamID of the user and `ilpUsername` with the desired Interledger username.
 
 
 
-#### 3. Send & Verify
+### 3. Send & Verify
 1. Click the "Send" button to make the API call.
 2. If the request is successful, you will receive a response containing the new Interledger wallet address.
 
-#### 4. Common Errors & Fixes
+### 4. Common Errors & Fixes
 - **Error 401: Unauthorized**: This error occurs when the API key is missing or invalid. Double-check your API key and ensure it is included in the request headers.
 - **Error 400: Bad Request**: This error indicates that the request payload is malformed. Ensure that you are sending a valid JSON payload with the required fields.
 - **Error 500: Internal Server Error**: This error is returned when there is an issue with the Chimoney API. If you encounter this error, try again later or contact Chimoney support.
 
-#### 5. Troubleshooting Tips
+### 5. Troubleshooting Tips
 - Ensure that you are using the correct API endpoint and HTTP method.
 - Double-check your request headers and payload for any errors.
 - If you continue to experience issues, consult the Chimoney API documentation or reach out to their support team for assistance.
 
-## Conclusion
+
