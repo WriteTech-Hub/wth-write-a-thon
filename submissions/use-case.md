@@ -2,6 +2,7 @@
 
 This article shows how hackathon organizers can use the Chimoney `accounts/issue-wallet-address` API to simplify and speed up prize payouts to participants around the world. By pre-issuing Interledger wallets, organizers can offer a smooth payout experience.
 
+
 ## The Challenge
 
 Running a global hackathon comes with a lot of challenges, especially when it’s time to send out prizes. using  traditional payment methods often mean:
@@ -16,7 +17,8 @@ These problems add extra work for organizers and delay winners from receiving th
 
 Chimoney's `accounts/issue-wallet-address` API offers a better way. Instead of collecting payment details manually, hackathon platforms can automatically create an Interledger (ILP) wallet for each participant as they register.
 
-This means every participant, no matter where they’re from, has a wallet ready to receive money.
+This means every participant, no matter where they’re from, has a wallet ready to receive money instantly. This makes payouts fast, secure, and easy for everyone involved.
+
 
 ## Use Case
 

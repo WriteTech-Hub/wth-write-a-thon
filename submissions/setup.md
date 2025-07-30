@@ -7,7 +7,7 @@
 
 ---
 
-### 🔐 **Step 1: Create a Sandbox Account & Get Your API Key**
+###  **Step 1: Create a Sandbox Account and get Your API Key**
 
 ### 1. Go to [sandbox.chimoney.io](https://sandbox.chimoney.io)
 
@@ -33,46 +33,53 @@ Click **“Add New App”** and enter an App name.
 Once created:
 
 - Copy your **API Key**
-- Copy your **User ID** (labelled as `teamId`)
+- Copy your **User ID** (labelled as `Team ID`)
+<br/>
 
 📸 **Screenshot Example:** 
 
 ![Create App and Copy API Key](https://i.postimg.cc/C19Z7QvR/image.png)
 
-> You’ll use the `teamId` as your `userId` in requests.
+> You’ll use the `Team ID` as your `userId` in requests.
 
 ---
 
-### 🧰 Prerequisites
 
-- Chimoney Sandbox developer account
+
+### **Step 2: Make Your First API Call**
+
+###  Prerequisites
+
+- Chimoney [Sandbox](https://sandbox.chimoney.io) developer account
 - Your **API key** from the Developer dashboard
-- Your **teamId** (used as `userId`)
-- A unique `ilpUsername` (e.g. `jane.doe`)
+- Your **Team ID** (used as `userId`)
+- A unique **ilpUsername** (e.g. `jane.doe`)
 - Postman or cURL for testing the endpoint
 
 ---
-
-### 📤 **Step 2: Make Your First API Call**
-
-### 🔐 1. Set Up Authentication in Postman
+### 1. Set Up Authentication in Postman
 
 - Open your collection or create a new **POST** request.
-- Under **Headers**, add:
+- Under **Headers** tab, add:
 
   | Key          | Value                  |
   | ------------ | ---------------------- |
   | X-API-KEY    | `YOUR_SANDBOX_API_KEY` |
   | Content-Type | `application/json`     |
 
-**Screenshot:**  
+<br/>
+
+📸 **Screenshot Example**  
+
 ![Postman Header Setup](https://i.postimg.cc/dQdDvnH9/image.png)
 
-### 🚀 2. Configure the Request
+###  2. Configure the Request
 
 - **Method & URL**
 
+  ```bash
   POST <https://api-v2-sandbox.chimoney.io/v0.2.4/accounts/issue-wallet-address>
+  ```
 
 - **Body (raw JSON)**
 
@@ -83,13 +90,16 @@ Once created:
   }
   ```
 
-**Screenshot:**  
+ <br/>
+
+📸 **Screenshot Example**  
 
 ![Postman Request Body Setup](https://i.postimg.cc/Pfmf0JJ3/image.png)
 
-### ✅ **3. Send & Verify**
 
-- **Hit **Send** in Postman**
+### 3. Send & Verify
+
+- **Click on **Send** in Postman**
 - **Look for 200 OK response**
 
   ```json
@@ -114,10 +124,13 @@ Once created:
   }
   ```
 
-**Screenshot:**  
+<br/>
+
+📸 **Screenshot Example**  
+
 ![Postman Response](https://i.postimg.cc/0N3CLxZn/image.png)
 
-### ❌ **4. Common Errors & Fixes**
+###  **4. Common Errors & Fixes**
 
 | HTTP Status | Type             | Code                    | Message                                       | Likely Cause                             | Suggested Fix                                     |
 |-------------|------------------|--------------------------|-----------------------------------------------|-------------------------------------------|--------------------------------------------------|
@@ -125,8 +138,8 @@ Once created:
 | 401         | Unauthorized     | –                        | Unauthorized access                           | API key is missing or incorrect           | Ensure `X-API-KEY` is present and valid in header |
 | 500         | Server Error     | INTERNAL_SERVER_ERROR    | An internal server error occurred.            | Issue on Chimoney’s end or malformed request | Try again later or contact Chimoney support       |
 
-### 🛠 **5. Troubleshooting Tips**
+### 5. Troubleshooting Tips
 
-- ✅ Use your exact teamId from the app settings — not a random string.
-- 🔑 If you get 401, re-copy the API key from the dashboard.
-- 🔁 Use a unique ilpUsername per user (you can reuse the same userId for multiple ILP addresses).
+-  Use your exact teamId as `userId` from the app settings — not a random string.
+-  If you get 401, re-copy the API key from the dashboard.
+-  Use a unique `ilpUsername` per user (you can reuse the same userId for multiple ILP addresses).
