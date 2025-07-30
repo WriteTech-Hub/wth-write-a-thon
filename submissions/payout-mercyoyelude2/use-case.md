@@ -1,18 +1,15 @@
-# 💸 Use Case: Paying Freelancers via Chimoney’s Interledger Wallet Address
-
-**Goal:** Seamlessly send USD payouts to freelancers or remote workers using Chimoney’s `/payouts/interledger-wallet-address` API.
-
+# Global Payment via Chimoney’s Interledger Wallet Address
 ---
 
 ## 📘 Scenario
 
-You run a global platform that pays freelancers for their services. Rather than managing complex banking setups for each country, you want to send fast, secure payments directly to Interledger-enabled wallets using Chimoney.
+You are running a global hackathon, write-a-thon that will be rewarding participants across borders. Rather than managing complex banking setups for each country, you want to send fast, secure payments directly to Interledger-enabled wallets using Chimoney.
 
 ---
 
 ## 🚀 Why This Use Case?
 
-- 🌎 Pay workers across borders without worrying about banking differences
+- 🌎 Pay participants across borders without worrying about banking differences
 - ⚡ Instant value transfer via Interledger Protocol (ILP)
 - 💵 Support multiple currencies like USD
 - 📱 Easy integration into your existing backend or platform
@@ -23,7 +20,7 @@ You run a global platform that pays freelancers for their services. Rather than 
 
 ### 🪜 Flow - Step-by-Step
 
-1. ✅ **Task Completed:** A freelancer completes a gig on your platform.
+1. ✅ **Winners Announced:** Hackathon winners are announced.
 2. 🧮 **Payout Calculated:** Your backend calculates how much to send.
 3. 🛰 **API Call Sent:** Your app sends a `POST` request to the `/payouts/interledger-wallet-address` endpoint with:
    - Their ILP address
@@ -32,6 +29,9 @@ You run a global platform that pays freelancers for their services. Rather than 
 4. 💸 **Chimoney Handles Transfer:** Chimoney routes and completes the payout to the ILP wallet.
 5. 📬 **Notification (Optional):** You can trigger an email or in-app notification to the freelancer.
 
+### 📊 Flow Diagram
+
+![ILP Payout Flow](./images//flow-diagram.png)
 ---
 
 ## 🧰 Prerequisites
@@ -52,7 +52,7 @@ POST /v0.2.4/payouts/interledger-wallet-address
 Host: api-v2-sandbox.chimoney.io
 
 Headers:
-  Authorization: Bearer YOUR_API_KEY
+  X-API-KEY: Bearer YOUR_API_KEY
 
 Body:
 {
@@ -63,8 +63,8 @@ Body:
       "interledgerWalletAddress": "https://ilp-sandbox.chimoney.com/your-id",
       "currency": "USD",
       "amountToDeliver": 10,
-      "narration": "July freelance payout",
-      "collectionPaymentIssueID": "job-001"
+      "narration": "Congratulations on emerging hackathon winner!",
+      "collectionPaymentIssueID": "hackathon-001"
     }
   ]
 }
@@ -108,10 +108,25 @@ Body:
 
 ---
 
-## 💡 Wrap-Up
-With just a few lines of code, you can automate freelancer payouts globally. Chimoney + Interledger makes cross-border payments smooth, developer-friendly, and scalable.
+## 💡 Wrap-up
+Not limited to one-time payments, with just a few lines of code, you can automate freelancer/employees payouts globally. Chimoney + Interledger makes cross-border payments smooth, developer-friendly, and scalable.
+
+### ✨ Real-World Extensions
+Here are more ways to apply this payout flow:
+
+- #### Open-source contributor rewards
+Automate thank-you payouts for contributors using their ILP wallet address (e.g. via GitHub Actions or Discord bots).
+
+- #### Content creation platforms
+Pay writers, creators, or community moderators directly based on engagement or content milestones.
+
+- #### Job boards or marketplaces
+Trigger seamless payouts to service providers upon completion of gigs or tasks.
+
+- #### Hackathons and community events
+Send rewards at scale without dealing with traditional banking headaches.
 
 ---
 
 ## Next Step:
-🎯 Integrate this API flow into your backend and trigger payouts after job completion!
+🎯 Integrate this API flow into your backend and trigger payouts with this [tutorial](./tutorial.md)!
