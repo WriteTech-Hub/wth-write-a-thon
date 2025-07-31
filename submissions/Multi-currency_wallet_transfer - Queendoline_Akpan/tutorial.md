@@ -159,6 +159,7 @@ After running this code in your editor, you should get a successful `200 OK` res
 
 The recipient also receives an instant notification in their email box as shown below, alerting them of the funds available for them to redeem in any of the available forms they want as offered by Chimoney.
 
+![Recipient's Email Notification](/submissions/images/email_notification.png)
 ---
 
 ## Common Errors and How to Fix Them
