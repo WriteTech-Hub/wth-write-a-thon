@@ -6,11 +6,11 @@ This guide will walk you through the essential steps to prepare your environment
 
 Before you start coding, ensure you have the following set up:
 
-- **A Chimoney Developer Account**: If you don't have one, you'll need to sign up at the Chimoney developer portal.  
-- **A New Application on Your Chimoney Developer Dashboard**: This is crucial for generating and accessing your unique API Key.  
-- **A Chimoney API Key**: This is for authenticating all your API requests.  
+- **A Chimoney developer account**: If you don't have one, you'll need to sign up at the Chimoney developer portal.  
+- **A new application on Your Chimoney developer dashboard**: This is crucial for generating and accessing your unique API Key.  
+- **An API Key**: This is for authenticating all your API requests.  
 - **Node.js Installed**: We recommend the latest LTS version for running the JavaScript code samples. You can download it from [nodejs.org](https://nodejs.org).  
-- **An Integrated Development Environment (IDE)**: VSCode is highly recommended for its features and ease of use.  
+- An IDE most preferably VSCode.
 
 ## 2. Get Your Chimoney API Key
 
@@ -24,13 +24,15 @@ Your API Key authenticates your requests and links them to your Chimoney account
 
 ## 3. Set Up Your Development Environment
 
-You'll need `axios` to make HTTP requests in JavaScript.
+You'll need a library or tool to make HTTP requests in JavaScript. While we are using `axios` for the code samples in this  [tutorial](/submissions/Multi-currency_wallet_transfer%20-%20Queendoline_Akpan/tutorial.md)
+, you can use any other HTTP client you prefer (e.g., the browser's `fetch` API).
 
 - **Install Axios**: Open your terminal or command prompt.  
 - Navigate to your project directory.  
 - Run the following command to install the axios library:  
   ```bash
   npm install axios
+
 ## 4.  Configure Your Authentication
 
 Your API Key needs to be included in the headers of your API requests for successful authentication.
@@ -49,3 +51,4 @@ const headers = {
 Once you have these steps completed, your environment will be ready to start making multi-currency wallet transfer requests with the Chimoney API!
 
 Let's learn how to make your first multicurrency wallet transfer with Chimoney in this [tutorial](/submissions/Multi-currency_wallet_transfer%20-%20Queendoline_Akpan/tutorial.md).
+S
