@@ -4,7 +4,7 @@ In this tutorial, you will learn how to integrate Chimoney’s `/payouts/interle
 
 ---
 
-## 🔧 What You’ll Build
+## What You’ll Build
 
 - Configure your environment
 - Build a payout service with Chimoney’s API
@@ -13,7 +13,7 @@ In this tutorial, you will learn how to integrate Chimoney’s `/payouts/interle
 
 ---
 
-## 🧰 Prerequisites
+## Prerequisites
 
 Before you start, make sure you have completed the [Setup Guide](./setup.md). You should already have:
 - A Chimoney developer account
@@ -22,7 +22,7 @@ Before you start, make sure you have completed the [Setup Guide](./setup.md). Yo
 - Tested the `payouts to interledger wallet address` endpoint
 
 Additionally;
-- Basic knowledge on RESTful APIs
+- Basic knowledge of RESTful APIs
 - Node.js and npm/yarn installed
 - Axios for HTTP requests
 
@@ -30,7 +30,7 @@ With that out of the way, let us dive in.
 
 ---
 
-## 🗂 Project Structure
+## Project Structure
 
 Here’s what your folder might look like:
 
@@ -46,7 +46,7 @@ chimoney-payouts/
 └── README.md
 ```
 
-## 🗂 Step 1: 🔧 Configuration & Setup
+## Step 1: Configuration & Setup
 
 ### Install Dependencies
 
@@ -91,7 +91,9 @@ export const config = {
 
 ---
 
-## 🧾 Step 2: Build the Chimoney Interledger Service
+## Step 2: Build the Chimoney Interledger Service
+Now that your configuration is set up, it’s time to write the code that will send a payout to an Interledger wallet using Chimoney’s API. Let’s start by creating a reusable service class.
+
 ### Create `chimoneyService.js`:
 
 ```js
@@ -139,7 +141,7 @@ export default ChimoneyService;
 
 ---
 
-## ⚙️ Step 3: Usage Example (`index.js`)
+## Step 3: Usage Example (`index.js`)
 
 ```js
 import ChimoneyService from "./chimoneyService.js";
@@ -161,58 +163,51 @@ dotenv.config();
       narration,
       collectionPaymentIssueID,
     });
-    console.log("✅ Payout Success:", result);
+    console.log("Payout Success:", result);
   } catch (error) {
     const res = error.response;
-    console.error("❌ Payout Failed:", {
+    console.error("Payout Failed:", {
         status: res?.status,
         message: res?.data?.message || res?.data?.error || error.message
     });
     // handle error messages, e.g.:
-    // if errorData.message includes "CAD is not enabled"
+    // if errorData.message includes "CAD is not enabled."
     // if errorData.error includes "valid Chimoney user ID"
   }
 })();
 ```
+---
 
-### 🧪 Notes & Error Handling
-#### Response Object Includes:
-- status, message
-- data.paymentLink / data.redeemLink
-- data.chimoneys or data.payouts with chiRef, issueID, etc.
+## How It Works (Behind the Scenes)
 
+1. You make a `POST` request to the `/payouts/interledger-wallet-address` endpoint
+2. Chimoney authenticates your API key
+3. Chimoney deducts the amount from your wallet
+4. The ILP wallet address receives the payout (in supported currency)
+5. A response is returned with `chiRef`, status, and optionally a `paymentLink`
 
-### ⚠️ Common Errors
-Here are a couple of issues you might hit (and how to fix them):
+---
 
-#### 1. ❌ "CAD is not enabled"
+## Handling Errors & Troubleshooting
+Chimoney’s API may return various errors depending on your inputs or environment. Below are common issues and how to resolve them:
+
+### 1. "CAD is not enabled"
 **Fix:** Change **currency** to "USD"
 
-#### 2. ❌ "sender must be a valid Chimoney user ID"
-**Fix:** Invalid **subAccount**, (remove the field if unused, or request for one through support).
-
-
-**Wrap error handler to inspect `errorData.message` or `.error` and act accordingly.**
+### 2. "sender must be a valid Chimoney user ID"
+**Fix:** Invalid **subAccount**, (remove the field if unused, or request one through support).
 
 ---
 
-## 🔄 How It Works (Behind the Scenes)
+## You Did It
 
-1. 🧾 You make a `POST` request to the `/payouts/interledger-wallet-address` endpoint
-2. 🔐 Chimoney authenticates your API key
-3. 💳 Chimoney deducts the amount from your wallet
-4. 🌐 The ILP wallet address receives the payout (in supported currency)
-5. 📦 A response is returned with `chiRef`, status, and optionally a `paymentLink`
-
----
-
-## 🎉 You Did It
 You just:
-
 - Set up your environment
 - Made a successful payout to an Interledger wallet
 - Learned how to handle and debug errors
 
 
-_🔗 Next up: Extend this into a backend job or admin panel!_
+That’s it for the setup!
+
+_Next up: Extend this into a backend job or admin panel!_
 
